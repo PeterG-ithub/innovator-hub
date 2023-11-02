@@ -1,0 +1,21 @@
+<nav class="bg-gray-800">
+  <div class="flex h-14 justify-between gap-2 px-4">
+    <div class="flex-none self-center text-white">test</div>
+    <div class="max-w-2xl flex-1 self-center">
+      <form action="/action_page.php" class="flex">
+        <input type="text" placeholder="Search.." name="search" class="flex-1" />
+      </form>
+    </div>
+    <div class="flex-none self-center text-white">test</div>
+  </div>
+</nav>
+
+<% @posts.each do |post| %>
+    <%= post.title %>
+    <%= post.description %>
+    <%= post.user.username %>
+<% end %>
+
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+</h1>
