@@ -1,12 +1,17 @@
 <nav class="bg-gray-800">
-  <div class="flex h-14 justify-between gap-2 px-4">
-    <div class="flex-none self-center text-white">test</div>
+  <div class="flex h-14 justify-between gap-2 px-10">
+    <div class="flex flex-none self-center text-white gap-4">
+      <%= image_tag("logo.jpeg", :alt => "logo", class: "w-10 rounded-full" ) %>
+      <div class="self-center text-white font-bold font-mono">InnovatorHub</div>
+    </div>
     <div class="max-w-2xl flex-1 self-center">
       <form action="/action_page.php" class="flex">
-        <input type="text" placeholder="Search.." name="search" class="flex-1" />
+        <input type="text" placeholder="Search.." name="search" class="flex-1 rounded-full" />
       </form>
     </div>
-    <div class="flex-none self-center text-white">test</div>
+    <div class="flex-none self-center text-white">
+      <div class="p-2 px-5 font-bold bg-[#021a33] rounded-full">Log in</div>
+    </div>
   </div>
 </nav>
 
